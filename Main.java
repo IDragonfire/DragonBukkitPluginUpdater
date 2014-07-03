@@ -4,7 +4,7 @@ import java.io.File;
 
 import javax.swing.JOptionPane;
 
-public class Worker {
+public class Main {
 
     private File sourceRoot;
     private String oldVersion;
@@ -12,7 +12,7 @@ public class Worker {
 
     private ConfirmFrame frame;
 
-    public Worker() {
+    public Main() {
         DragonBukkitPluginUpdater.setLookAndFeel();
         this.sourceRoot = DragonBukkitPluginUpdater.getSourceRoot();
         this.oldVersion = DragonBukkitPluginUpdater
@@ -38,6 +38,6 @@ public class Worker {
     }
 
     public static void main(String[] args) {
-        new Worker();
+        new Main();
     }
 }
